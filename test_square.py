@@ -66,6 +66,6 @@ for name, est in estimators.iteritems():
 #   pl.title(name)
 #   pl.savefig('./figs/' + name + '.png')
 for i in xrange(19):
-    print f(i,S,2)
+    print str(i+1) + " " + str(f(i,S,2))
 
 
