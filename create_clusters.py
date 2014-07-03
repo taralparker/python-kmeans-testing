@@ -1,6 +1,9 @@
 import numpy as np
 from matplotlib import pyplot as plt
 from math import pi
+import os
+if not os.path.isdir("./test_clusters"):
+    os.mkdir("./test_clusters")
 
 def generate_square(size):
 	x = np.random.uniform(-1,1,size)

@@ -3,7 +3,15 @@ import pylab as pl
 from mpl_toolkits.mplot3d import Axes3D
 from sklearn.cluster import KMeans
 import prettyplotlib as plot 
+import os
+import sys
 
+
+if not os.path.isdir("./test_clusters"):
+    print "./test_clusters does not exist"
+    sys.exit()
+if not os.path.isdir("./figs"):
+    os.mkdir("./figs")
 
 X = np.loadtxt('./test_clusters/square_cluster.csv', delimiter = ',')
 
