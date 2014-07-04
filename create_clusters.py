@@ -46,9 +46,8 @@ def generate_hypercube(size):
 #   	plt.show()
 
 
-SAMPLE_SIZE = 1000
+SAMPLE_SIZE = 100000
 generate_square(SAMPLE_SIZE)
 generate_circle(SAMPLE_SIZE)
 generate_hypercube(SAMPLE_SIZE)    
-
 
